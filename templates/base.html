@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Online Plants Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--Header section starts-->
+    <header>
+        <div class="header-1">
+            <div class="share">
+                <span>Follow us:</span>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+            <div class="share">
+                <span>Call us:</span>
+                <a href="#">+00000000</a>
+            </div>
+
+        </div>
+        <div class="header-2">
+            <a href="#" class="logo"><i class="fas fa-seedling"></i>Plants Shop</a>
+            <form action="" class="serach-bar-container">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+
+            </form>
+        </div>
+        <div class="header-3">
+            <div id="menu-bar" class="fas fa-bars ">
+            </div>
+            <nav class="nav-bar">
+                <a href="#Home">Home</a>
+                <a href="#Category">Category</a>
+                <a href="#Product">Product</a>
+                <a href="#Deal">Deal</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user" id="login-btn"></a>
+            </div>
+        </div>
+    </header>
+    <!--Header section ends-->
+
+    {% block content %}
+    {% endblock content %}
+
+    <!-- footer section ends -->
+    <!-- scroll top button  -->
+    <a href="#Home" class="scroll-top fas fa-angle-up"></a>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="{% static 'assets/js/script.js' %}"></script>
+
+</html>
